@@ -76,7 +76,7 @@ function AI() {
       let sessionId = localStorage.getItem("sessionId");
       if (!sessionId) {
         try {
-          const res = await fetch("http://localhost:9000/start-chat", {
+          const res = await fetch("https://linkedin-clone-1lln.onrender.com/start-chat", {
             method: "POST",
             headers: {
               "Content-Type": "application/json"
@@ -134,10 +134,10 @@ function AI() {
 
       if (uploadType === "ai-image") {
         formData.append('AI_images', pendingFile);
-        endpoint = "http://localhost:9000/AIimages";
+        endpoint = "https://linkedin-clone-1lln.onrender.com/AIimages";
       } else if (uploadType === "resume") {
         formData.append('file', pendingFile);
-        endpoint = "http://localhost:9000/jobs/scan-resume";
+        endpoint = "https://linkedin-clone-1lln.onrender.com/jobs/scan-resume";
       }
 
       try {
@@ -174,7 +174,7 @@ function AI() {
     const userMessage = message;
     const dataToSend = { message, imagePath: imagePathToSend, language, sessionId };
     try {
-      const res = await fetch('http://localhost:9000/chat', {
+      const res = await fetch('https://linkedin-clone-1lln.onrender.com/chat', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(dataToSend)
@@ -242,7 +242,7 @@ function AI() {
 
       if (!sessionId) {
         try {
-          const res = await fetch("http://localhost:9000/start-chat", {
+          const res = await fetch("https://linkedin-clone-1lln.onrender.com/start-chat", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
           });
@@ -256,7 +256,7 @@ function AI() {
       }
 
       try {
-        const historyRes = await fetch(`http://localhost:9000/history/${sessionId}`);
+        const historyRes = await fetch(`https://linkedin-clone-1lln.onrender.com/history/${sessionId}`);
         const contentType = historyRes.headers.get("content-type");
         if (!contentType || !contentType.includes("application/json")) {
           const rawText = await historyRes.text();
@@ -343,7 +343,7 @@ function AI() {
 
   const handleDeleteMessage = async (sessionId, messageId) => {
   try {
-    const res = await fetch(`http://localhost:9000/chat/${sessionId}/message/${messageId}`, {
+    const res = await fetch(`https://linkedin-clone-1lln.onrender.com/chat/${sessionId}/message/${messageId}`, {
       method: 'DELETE',
     });
 

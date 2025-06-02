@@ -45,7 +45,7 @@ export default function JobsSort() {
   const fetchJobs = async (locationQuery = 'developer') => {
     setLoading(true);
     try {
-      const response = await axios.get('http://localhost:9000/jobs', {
+      const response = await axios.get('https://linkedin-clone-1lln.onrender.com/jobs', {
         params: {
           query: locationQuery,
           country: 'in',

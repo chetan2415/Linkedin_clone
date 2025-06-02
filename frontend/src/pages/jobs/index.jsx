@@ -24,7 +24,7 @@ function Jobs() {
   const fetchJobs = async (query) => {
     setLoading(true);
     try {
-      const response = await axios.get('http://localhost:9000/jobs', {
+      const response = await axios.get('https://linkedin-clone-1lln.onrender.com/jobs', {
         params: {
            query: query,
             country: 'in',
