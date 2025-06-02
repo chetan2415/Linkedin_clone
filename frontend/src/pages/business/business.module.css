@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@100..900&family=Plus+Jakarta+Sans:wght@200..800&display=swap');
+.dash{
+    font-family: 'Plus Jakarta Sans', sans-serif ;
+}
+
+.BussSearchBar{
+  margin-bottom: 1.5rem;
+}
+
+.BussSearchInput{
+  height: 40px;
+  width: 35%;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  padding: 0 10px;
+  font-family: 'Plus Jakarta Sans', sans-serif ;
+}
+.searchBuss{
+  height: 40px;
+  width: 10%;
+  margin-left:10px;
+  border-radius:8px;
+  padding: 0 10px;
+  border: 1px solid #ccc;
+  font-family: 'Plus Jakarta Sans', sans-serif ;
+  cursor: pointer;
+}
+
+.business {
+    padding: 2rem;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: #ffffff;
+    color: #1d1d1d;
+    margin-left: 23rem;
+    margin-right: 16rem;
+    margin-top: -30rem;
+  }
+  
+  .business h2 {
+    font-size: 24px;
+    margin-bottom: 1.5rem;
+    color: #000000;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    cursor: pointer;
+  }
+  
+  .businessGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 16px;
+    margin-bottom: 3rem;
+  }
+  
+  .businessItem {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    padding: 14px;
+    border-radius: 12px;
+    text-align: center;
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+  }
+  
+  .businessItem:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transform: translateY(-4px);
+  }
+  
+  .businessItem h4 {
+    font-size: 14px;
+    margin: 0;
+    color: #333;
+    font-weight: 500;
+  }
+  
+  .businessDetails {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 20px;
+    cursor: pointer;
+  }
+  
+  .businessBox {
+    background-color: #ffffff;
+    border: 1px solid #dcdcdc;
+    padding: 20px;
+    border-radius: 16px;
+    transition: all 0.3s ease;
+  }
+  
+  .businessBox:hover {
+    border-color: #0a66c2;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+  }
+  
+  .businessBox h3 {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 8px;
+  }
+  
+  .businessBox p {
+    font-size: 13px;
+    color: #555;
+    margin: 0;
+  }
+  
+  /* ===================== RESPONSIVE STYLES ===================== */
+  
+  @media (max-width: 1024px) {
+    .business {
+        margin-left: 2rem;
+        margin-right: 2rem;
+        margin-top: 1rem;
+    }
+
+    .businessGrid {
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    }
+
+    .businessDetails {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .business {
+        padding: 1.5rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-top: 1rem;
+    }
+
+    .business h2 {
+        font-size: 20px;
+    }
+
+    .businessBox h3 {
+        font-size: 15px;
+    }
+
+    .businessGrid {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    }
+
+    .businessDetails {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .business {
+        padding: 1rem;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        margin-top: 1rem;
+    }
+
+    .business h2 {
+        font-size: 18px;
+        margin-bottom: 1rem;
+    }
+
+    .businessItem h4 {
+        font-size: 13px;
+    }
+
+    .businessBox {
+        padding: 16px;
+    }
+
+    .businessBox h3 {
+        font-size: 14px;
+    }
+
+    .businessBox p {
+        font-size: 12px;
+    }
+}

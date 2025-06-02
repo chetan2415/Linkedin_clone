@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@100..900&family=Plus+Jakarta+Sans:wght@200..800&display=swap');
+.dash{
+    font-family: 'Plus Jakarta Sans', sans-serif ;
+}
+
+.active {
+    background-color: #0073b1;
+    color: white;
+  }
+  
+.jobs{
+    margin-left: 24rem;
+    margin-top: -29.5em;
+    margin-right: 10rem;
+}
+.jobsPro{
+    padding: 17px;
+    border: 1px solid rgb(120, 120, 120);
+    margin-top: 1.5rem;
+    border-radius: 11px;
+}
+
+.jobsPro h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Plus Jakarta Sans', sans-serif ;
+}
+
+.jobsPro p {
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #666;
+    font-family: 'Plus Jakarta Sans', sans-serif ;
+}
+
+.jobsPro button {
+    margin-right: 10px; 
+    padding: 8px 15px; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-family: 'Plus Jakarta Sans', sans-serif ;
+}
+
+.jobsPro button:first-child {
+    background-color: #007bff;
+    color: white;
+}
+
+.jobsPro button:last-child {
+    background-color: #ddd;
+}
+
+.jobsPro button:hover {
+    opacity: 0.8;
+}
+
+/*search job*/
+
+.jobSearch{
+    padding: 17px;
+    margin-left: 24rem;
+    margin-top: 1.5rem;
+    margin-right: 10rem;
+    border:1px solid rgb(120,120,120);
+    gap:10px;
+    max-width: 1000px;
+    border-radius: 11px;
+}
+
+.jobSearch h3 {
+    width: 100%; /* Ensures the heading stays on top */
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.jobSearch button {
+    flex: 1 1 calc(25% - 10px); 
+    min-width: 120px; 
+    padding: 10px 15px; 
+    cursor: pointer;
+    color: black;
+    transition: background 0.3s ease;
+    color: white;
+    text-align: center;
+    background-color: #519bea;
+    font-family: 'Plus Jakarta Sans', sans-serif ;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.jobSearch button:hover {
+    background-color: #0056b3;
+}
+
+/* work */
+.work{
+    padding: 17px;
+    margin-left: 24rem;
+    margin-top: 1.5rem;
+    margin-right: 10rem;
+    border: 1px solid rgb(120,120,120);
+    font-family: 'Plus Jakarta Sans', sans-serif ;
+    border-radius: 11px;
+}
+
+.work h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.work p {
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #666;
+}
+
+.job {
+    padding: 15px; /* Adds inner spacing */
+    background: white;
+    border-radius: 8px;
+}
+
+.job h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.job p {
+    font-size: 14px;
+    color: #666;
+}
+
+.hr {
+    border: none;
+    border-top: 1px solid #ddd; /* Light separator */
+    margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+    .jobs,
+    .jobSearch,
+    .work {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-top: 1rem;
+    }
+
+    .jobsPro h3,
+    .jobSearch h3,
+    .work h3 {
+        font-size: 16px;
+    }
+
+    .jobsPro p,
+    .work p,
+    .job p {
+        font-size: 13px;
+    }
+
+    .jobsPro button,
+    .jobSearch button {
+        width: 100%;
+        margin: 6px 0;
+    }
+
+    .jobSearch {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+.apply{
+    text-decoration: none; 
+}
+
+.jobsearchBar {
+    margin-bottom: 10px;
+  }
+  
+  .jobsearchInput {
+    padding: 6px 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-right: 8px;
+    width: 250px;
+    font-size: 14px;
+    height: 38px;
+  }
+  

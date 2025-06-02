@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@100..900&family=Plus+Jakarta+Sans:wght@200..800&display=swap');
+
+/* Individual classes (already styled, preserved) */
+.dash {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.create {
+  position: relative;
+  margin-left: 24rem;
+  margin-right: 16rem;
+  margin-top: -29.3rem;
+  display: flex;
+  padding: 1.3rem;
+}
+
+.BackGroundImgCre {
+  width: 100%;
+  cursor: pointer; 
+  height: 200px; 
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.avatarWrapper2 {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  top: 8rem;
+  right: 42rem;
+}
+
+
+.editPro2 {
+  width: 120px;             
+  height: 120px;
+  border-radius: 50%;       
+  overflow: hidden;         
+  border: 2px solid #ccc;    
+  align-items: center;   
+  cursor: pointer;
+ margin-bottom: -2.5rem;
+}
+
+.section {
+  margin-bottom: 1rem;
+  margin-left: 10rem;
+  color: black !important;
+  cursor: pointer;
+}
+
+.section p {
+  font-size: 1rem;
+  color: #555;
+  margin-top: -0.3rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 16rem;
+  margin-left: -62.2rem;
+}
+
+.form label {
+  color: #444;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.eduEntry,
+.workEntry {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.create h3 {
+  margin-bottom: 1rem;
+  color: #2c3e50;
+  font-size: 1rem;
+}
+
+.showConnectionsBtn {
+  margin-top: 1rem;
+  background-color: #1e90ff;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  margin-left: 15rem;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  position: relative;
+  z-index: 1000;
+}
+
+.connectionsList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+  margin-left: 5.5rem;
+  margin-right: 5.5rem;
+  margin-bottom: 3rem;
+}
+
+
+.connectionCard {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.connectionCard:hover {
+  transform: scale(1.03);
+}
+.connectionCard img {
+  margin-left: 1rem;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 0.75rem;
+}
+
+.connectionCard p {
+  margin: 0.25rem 0;
+  font-size: 0.95rem;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+
+.getPostAndDelete{
+  margin-left: 4rem;
+  margin-top: -3rem;
+}
+.postsAndDel{
+  margin-left: -2rem;
+  background-color: #1e90ff;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  margin-left: 24rem;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.postsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 86px;
+  margin-top: 3rem;
+  margin-left: 5.5rem;
+  margin-right: 5.5rem;
+  margin-bottom: 3rem;
+  cursor: pointer;
+  position: relative;
+}
+
+.postCard {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.postMedia {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.postMedia.active {
+  filter: brightness(0.7);
+  
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background:rgb(37, 27, 27);
+  color: white;
+  width: 100%;
+  padding: 10px;
+  display: none;
+}
+.overlay {
+  position: absolute;
+  color: white;
+  background: rgb(37, 27, 27);
+  width: 100%;
+  padding: 10px;
+  display: none;
+  z-index: 1;
+}
+
+.overlay.deleteIcon {
+  background: none;
+  color: black;
+  width: auto;
+  padding: 0;
+  top: 10px;
+  right: 10px;
+  display: block;
+  z-index: 100;
+  cursor: pointer;
+}
+.postContainer:hover .overlay {
+  display: block;
+}
+.postCard:hover .overlay {
+  display: block;
+}
+
+@media (max-width: 480px) {
+  .postCard {
+    max-width: 100%;
+    aspect-ratio: 1 / 1;
+  }
+}
+
+/* ========== MEDIA QUERIES ========== */
+
+@media (max-width: 1280px) {
+  .create {
+    margin-left: 18rem;
+    margin-right: 10rem;
+    margin-top: -20rem;
+  }
+
+  .edit {
+    margin-left: 30rem;
+    margin-right: -20rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .create {
+    margin: 2rem;
+    padding: 1.5rem;
+  }
+
+  .edit {
+    margin-left: auto;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    display: block;
+    text-align: center;
+  }
+
+  .avatarWrapper2 {
+    position: static;
+    margin: 0 auto 1.5rem auto;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .create {
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 12px;
+    flex-direction: column;
+  }
+
+  .heading {
+    font-size: 1.5rem;
+  }
+
+  .eduEntry,
+  .workEntry {
+    grid-template-columns: 1fr;
+  }
+
+  .edit {
+    margin: 1rem auto;
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .avatarWrapper2 {
+    position: static;
+    margin: 0 auto 1rem auto;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .connectionCard {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .showConnectionsBtn {
+    margin-left: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .postCard {
+    max-width: 100%;
+    aspect-ratio: 1 / 1;
+  }
+
+  .heading {
+    font-size: 1.3rem;
+  }
+
+  .form label {
+    font-size: 0.95rem;
+  }
+
+  .section p {
+    font-size: 0.9rem;
+  }
+
+  .edit {
+    font-size: 0.9rem;
+    padding: 8px;
+    width: 100%;
+    margin: 1rem auto;
+  }
+
+  .avatarWrapper2 {
+    position: static;
+    margin: 0 auto 1rem auto;
+    justify-content: center;
+  }
+
+  .editPro2 {
+    width: 90px;
+    height: 90px;
+  }
+}
+
+.fullscreenOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.postDetail {
+  background: white;
+  display: flex;
+  max-width: 80%;
+  max-height: 80%;
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.postLeft, .postRight {
+  margin-left: 1rem;
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.postImage {
+  width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+/*messages*/
+.notification {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: auto;
+  max-width: 300px;
+  background-color: #333;
+  color: white;
+  padding: 1rem 2rem 1rem 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  animation: fadeIn 0.5s ease-in-out;
+  position: fixed;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-family: 'Plus Jakarta Sans', sans-serif !important;
+  color: white;
+  cursor: pointer;
+}
+
+.closeBtn:hover{
+  color: red;
+}

@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@100..900&family=Plus+Jakarta+Sans:wght@200..800&display=swap');
+
+/* General font settings */
+.dash {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* User profiles grid styling */
+.networkContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 20px;
+  padding: 2rem;
+  margin-left: 23rem;
+  margin-right: 18rem;
+  margin-top: -30rem; /* Adjusted to create space between the sections */
+  cursor: pointer;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.card {
+  position: relative;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.cross {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  cursor: pointer;
+  color: #999;
+}
+
+.cross:hover {
+  color: #ff4d4f;
+}
+
+.NetworkAvatar,
+.NetworkProfile {
+  width: 60px;
+  height: 60px;
+  background-color: #d9d9d9;
+  border-radius: 50%;
+  margin: 0 auto 10px;
+}
+
+.type {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 12px;
+  color: #888;
+  background-color: #f1f1f1;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.nBtn {
+  margin-top: 15px;
+  padding: 8px 16px;
+  background-color: #0a66c2;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.nBtn:hover {
+  background-color: #004182;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .networkContainer {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 1rem;
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .networkContainer {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  }
+
+  .card {
+    padding: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .networkContainer {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-top: 1rem;
+    padding: 0.8rem;
+    grid-template-columns: 1fr;
+  }
+
+  .avatar {
+    width: 50px;
+    height: 50px;
+  }
+
+  .nBtn {
+    padding: 7px 14px;
+    font-size: 14px;
+  }
+
+  .type {
+    font-size: 11px;
+    padding: 3px 6px;
+  }
+}

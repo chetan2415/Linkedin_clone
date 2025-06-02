@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@100..900&family=Plus+Jakarta+Sans:wght@200..800&display=swap');
+.plus-jakarta-sans- {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.linkedContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+}
+
+.linkedPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.linkedImg {
+    width: 200px;
+    height: auto;
+    margin-top: -8rem;
+    margin-bottom: -60px; 
+}
+
+.line {
+    width: 200px;
+    height: 3px;
+    background: linear-gradient(to right, #0A66C2 100px, white 100px);
+    background-size: 200px 100%;
+    animation: alternateFill 4s linear infinite;
+}
+
+@keyframes alternateFill {
+    0%, 50% {
+        background-position: 0 0;
+    }
+    50.1%, 100% {
+        background-position: -100px 0;
+    }
+}
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@100..900&family=Plus+Jakarta+Sans:wght@200..800&display=swap');
+.dash{
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
+}
+
+.dashNavbar {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background: #fff;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    position: fixed; /* Makes the navbar fixed */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Ensures the navbar stays on top */
+    padding: 10px 20px;
+}
+
+.logo {
+    height: 3%;
+    width: 8%;
+    margin-right: 1rem; 
+}
+
+/* Search Bar */
+.searchContainer {
+    display: flex;
+    align-items: center;
+    background: #f1f1f1;
+    padding: 5px 10px;
+    border-radius: 20px;
+    flex-grow: 1;
+    max-width: 320px; 
+    margin-left: -6rem; 
+}
+
+.searchInput {
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 5px;
+}
+
+.searchIcon {
+    width: 15px;
+    height: 20px;
+    margin-left: 5px;
+}
+
+/* Navigation Buttons */
+.navButtons {
+    display: flex;
+    gap: 70px;
+}
+
+.navItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navItem img {
+    width: 24px;
+    height: 24px;
+    
+}
+
+.navItem button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 14px;
+    color: #555;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.navItem button:hover {
+    color: #5ca7f8; 
+    transform: scale(1.1); 
+}
+
+/* Profile Section */
+.profileContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-right: 2rem;
+}
+
+.profileImage {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profileInitials {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: blue;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.dropdownButton {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #555;
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
+}
+
+/* Responsive styles for tablets and smaller */
+@media screen and (max-width: 768px) {
+    .linkedImg {
+      width: 150px;
+      margin-top: -4rem;
+      margin-bottom: -40px;
+    }
+  
+    .line {
+      width: 150px;
+    }
+  
+    .dashNavbar {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 10px;
+      margin: 0;
+    }
+  
+    .logo {
+      width: 25%;
+      height: auto;
+      margin-bottom: 1rem;
+    }
+  
+    .searchContainer {
+      width: 100%;
+      margin-left: 0;
+      margin-bottom: 1rem;
+      max-width: 100%;
+    }
+  
+    .navButtons {
+      width: 100%;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin-bottom: 1rem;
+    }
+  
+    .navItem img {
+      width: 20px;
+      height: 20px;
+    }
+  
+    .navItem button {
+      font-size: 12px;
+    }
+  
+    .profileContainer {
+      margin: 0 auto;
+      gap: 8px;
+    }
+  
+    .profileImage,
+    .profileInitials {
+      width: 35px;
+      height: 35px;
+    }
+  
+    .dropdownButton {
+      font-size: 14px;
+    }
+  }
+  
+  /* Even more compact for mobile (480px and under) */
+  @media screen and (max-width: 480px) {
+    .linkedImg {
+      width: 120px;
+    }
+  
+    .line {
+      width: 120px;
+    }
+  
+    .logo {
+      width: 35%;
+    }
+  
+    .navButtons {
+      gap: 15px;
+    }
+  
+    .searchContainer {
+      padding: 4px 8px;
+    }
+  
+    .searchInput {
+      font-size: 14px;
+    }
+  
+    .dropdownButton {
+      font-size: 13px;
+    }
+  }
+  

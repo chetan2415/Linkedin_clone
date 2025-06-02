@@ -1,0 +1,253 @@
+.AIContainer {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    margin-top:2rem ;
+    box-sizing: border-box;
+  }
+  
+  .inputWrapper {
+    position: fixed;
+    margin-top: 2rem;
+    left: 0;
+    right: 0;
+    background: #f9f9f9;
+    border-radius: 2rem;
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    box-shadow: 0 0 8px rgba(0, 0, 0.5, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+    z-index: 1000;
+  }
+  
+  .chatContent{
+      margin-top: 1rem; 
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-bottom: 2rem;
+      opacity: 1;
+  }
+  .fadeTop {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 7rem; 
+    pointer-events: none;
+    background: linear-gradient(to bottom, #ffffff 60%, rgba(249, 249, 249, 0));
+    z-index: 999;
+  }
+  
+  .AIinput {
+    flex: 1;
+    border: none;
+    resize: none;
+    background: transparent;
+    font-size: 1rem;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    padding: 0.5rem;
+    outline: none;
+    max-height: 150px;
+    overflow-y: auto;
+  }
+  
+  .AIcross{
+    margin-top: -1.2rem;
+    margin-left: 90rem;
+    border: none;
+    background-color: white;
+    font-size: larger;
+    cursor: pointer;
+    position: fixed;
+    z-index: 999;
+  }
+  .AIside{
+    margin-top: -1.2rem;
+    margin-right: 89rem;
+    font-size: larger;
+    position: fixed;
+    cursor: pointer;
+    opacity: 0.9;
+  }
+  .controls {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .actionButton {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 0.3rem 0.8rem;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 1rem;
+    font-size: 0.875rem;
+    cursor: pointer;
+  }
+  
+  .circleButton {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background: #f0f0f0;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .sendButton {
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  /*output*/
+  .AIans{
+    margin-top: 5rem;
+    align-content: center;
+    max-width: 800px;
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
+    line-height: 2;
+    overflow-y: auto;
+    z-index: 1;
+  }
+  .Question{
+    border: 1px solid rgb(218, 217, 217);
+    border-radius: 5px;
+    padding: 7px;
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
+    max-width: 200;
+  }
+  /*styling*/
+  .formattedReply {
+    white-space: pre-wrap;
+    line-height: 1.6;
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .formattedReply h3 {
+    font-weight: bold;
+    margin: 1rem 0 0.5rem;
+    font-size: 1.2rem;
+  }
+  
+  .formattedReply p {
+    margin: 0.5rem 0;
+  }
+  
+  .formattedReply ul {
+    padding-left: 1.5rem;
+    margin: 0.5rem 0;
+  }
+  
+  .formattedReply li {
+    list-style-type: disc;
+    margin-bottom: 0.3rem;
+  }
+  
+  /*histroy*/
+  .AIHistroy{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height:100vh;
+    background-color: #f9f9f9;
+    border-right: ipx solid rgb(120,120,120);
+    padding: 1rem;
+    animation: slideIn 0.3s forwards;
+    position: fixed;
+    overflow-y: auto;
+  }
+  @keyframes slideIn {
+    from{transform: translate(-100);}
+    to{transform: translate(0);}
+  }
+  .AIHISheading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3.5rem;
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
+    cursor: pointer;
+  }
+  .closeIcon{
+    cursor: pointer;
+    font-size: 1rem;
+    color: black;
+  }
+
+  .historyList{
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
+    margin-top: 0.5rem;
+    line-height: 2;
+    cursor: pointer;
+  }
+
+  /* translate*/
+  .dropdownWrapper {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .languageDropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 4px;
+    padding: 0.3rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    border: 1px solid #ccc;
+    background-color: white;
+    z-index: 10;
+    min-width: 150px;
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
+  }
+  
+  
+  /*copy*/
+  .copyIcon {
+  cursor: pointer;
+  float: right;
+  margin-left: 8px;
+  color: #888;
+  transition: color 0.3s;
+}
+
+.copyIcon:hover {
+  color: #000;
+}
+
+.deleteIcon{
+  cursor: pointer;
+  margin-left: 1rem;
+  font-size: small;
+}
+.deleteIcon:hover {
+  color:red;
+}
+
+@media (max-width: 600px) {
+  .AIcross {
+    top: 2rem;           /* Use top/right/left/bottom for fixed elements */
+    right: 1rem;
+    z-index: 100;
+    font-size: 1.2rem;
+  }
+}

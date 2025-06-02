@@ -1,0 +1,218 @@
+.navbar {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    margin-top: 1rem; 
+    padding-right: 8rem;
+    padding-left: 8rem;
+}
+
+.navbar img {
+    width: 9%;
+    height: 19%;
+    cursor: pointer;
+}
+
+.signBtn{
+    padding: 10px 15px;
+    background-color: #0A66C2;
+    color: white;
+    border: none;
+    cursor: pointer !important;
+    pointer-events: auto !important; 
+    font-size: 16px;
+    border-radius: 10px;
+    position: relative; 
+    z-index: 10;
+}
+
+/* container */
+.loginRight {
+    width: 50vw;  
+    height: 100vh;
+    display: flex;
+    align-items: center;  
+    justify-content: center;  
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.loginForm {
+    width: 80%; 
+    max-width: 350px; 
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.loginForm label {
+    width: 100%;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.loginForm input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 0.8rem;
+}
+
+.forgotPassword {
+    width: 100%;
+    text-align: right;
+    margin-bottom: 10px;
+    text-decoration: none !important; 
+    margin-top: 1rem;
+}
+
+.forgotPassword a {
+    text-decoration: none; /* Removes underline */
+    color: #0A66C2; /* LinkedIn Blue */
+    font-weight: bold; 
+}
+.loginButton {
+    width: 100%;
+    padding: 10px;
+    background-color: #0A66C2;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.orLine {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.googleButton {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.googleButton img {
+    width: 19%;
+    height: auto;
+    margin-right: 10px;
+}
+
+.loginLeft {
+    width: 50vw;
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-top: 2.5rem;
+    padding-left: 2rem;
+}
+
+.loginImage {
+    max-width: 80%;
+    height: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 1rem;
+    }
+  
+    .navbar img {
+      width: 30%;
+      height: auto;
+      margin-bottom: 1rem;
+    }
+  
+    .signBtn {
+      width: 100%;
+      font-size: 14px;
+      padding: 10px;
+    }
+  
+    .loginLeft,
+    .loginRight {
+      width: 100vw;
+      height: auto;
+      position: static;
+      margin: 0;
+      padding: 1rem;
+      flex-direction: column;
+    }
+  
+    .loginImage {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+    }
+  
+    .loginForm {
+      width: 100%;
+      max-width: 90%;
+      margin-top: 2rem;
+    }
+  
+    .googleButton {
+      font-size: 14px;
+    }
+  
+    .googleButton img {
+      width: 15%;
+    }
+  
+    .forgotPassword {
+      font-size: 14px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .navbar img {
+      width: 40%;
+      margin-left: 7rem;
+    }
+  
+    .signBtn {
+      font-size: 13px;
+      padding: 8px 12px;
+    }
+  
+    .loginForm {
+      padding: 10px;
+    }
+  
+    .loginForm input {
+      font-size: 14px;
+    }
+  
+    .loginButton, .googleButton {
+      font-size: 14px;
+      padding: 8px;
+    }
+  
+    .orLine {
+      font-size: 14px;
+    }
+  }
+  

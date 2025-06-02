@@ -1,0 +1,181 @@
+.ResumeContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+
+.ResumeHeading {
+  font-family: 'Plus Jakarta Sans', sans-serif !important;
+  margin: 0; 
+}
+
+.controls {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.dots,
+.ResumeCross {
+  border: none;
+  background-color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: 4.5rem; 
+  right: 2rem;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  z-index: 10;
+}
+
+.dropdownMenu button {
+  background: none;
+  border: none;
+  padding: 0.5rem 1rem;
+  text-align: left;
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.dropdownMenu button:hover {
+  background: #f0f0f0;
+}
+
+
+.ResumeForm {
+  max-width: 1000px;
+  margin: -1rem auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 12px;
+  font-family: 'Plus Jakarta Sans', sans-serif !important;
+}
+
+.ResumeForm form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.ResumeForm h2 {
+  font-family: 'Plus Jakarta Sans', sans-serif !important;
+  color: #333;
+  margin-top: 1rem;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 0.25rem;
+}
+
+.ResumeForm input,
+.ResumeForm textarea,
+.ResumeForm select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-family: 'Plus Jakarta Sans', sans-serif !important;
+  transition: border-color 0.3s ease;
+  background-color: white;
+}
+
+.ResumeForm input:focus,
+.ResumeForm textarea:focus,
+.ResumeForm select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+
+.ResumeBtn {
+  padding: 0.75rem 1.5rem;
+  background-color: #007bff;
+  color: white;
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-self: flex-start;
+}
+
+.ResumeBtn:hover {
+  background-color: #0056b3;
+}
+
+.div > div {
+  margin-top: -1rem;
+  padding-left: 1rem;
+  border-left: 3px solid #ddd;
+}
+
+.addSectionBtn {
+  margin-top: 10px;
+  margin-right: 50rem;
+  padding: 6px 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: 'Plus Jakarta Sans', sans-serif !important;
+}
+
+/*message*/
+.notification {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: auto;
+  max-width: 300px;
+  background-color: #333;
+  color: white;
+  padding: 1rem 1rem 1rem 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  animation: fadeIn 0.5s ease-in-out;
+  position: fixed;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 10spx;
+  right: 10px;
+  background: none;
+  border: none;
+  font-family: 'Plus Jakarta Sans', sans-serif !important;
+  color: white;
+  cursor: pointer;
+}
+
+.closeBtn:hover{
+  color: red;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.ResumeMessages{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  color: green;
+  cursor: pointer;
+}
